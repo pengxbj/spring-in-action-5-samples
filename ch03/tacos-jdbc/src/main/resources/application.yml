@@ -1,0 +1,20 @@
+spring:
+  datasource:
+    driverClassName: org.h2.Driver
+    password: '123'
+    url: jdbc:h2:mem:testdb
+#    url: jdbc:h2:file:/data/demo
+    username: sa
+#  h2:
+#    console:
+#      enabled: true
+#      path: /h2-console
+#      settings:
+#        trace: false
+#        web-allow-others: false
+#  jpa:
+#    database-platform: org.hibernate.dialect.H2Dialect
+  devtools:
+    restart:
+      poll-interval: 2s
+      quiet-period: 1s

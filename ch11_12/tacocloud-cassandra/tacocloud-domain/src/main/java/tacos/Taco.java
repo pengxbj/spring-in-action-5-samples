@@ -33,7 +33,8 @@ public class Taco {
   @PrimaryKeyColumn(type=PrimaryKeyType.CLUSTERED,
                     ordering=Ordering.DESCENDING)
   private Date createdAt = new Date();
-  
+
+  @NotNull(message = "Ingredient could not be null")
   @Size(min=1, message="You must choose at least 1 ingredient")
   @Column("ingredients")
   private List<IngredientUDT> ingredients;
